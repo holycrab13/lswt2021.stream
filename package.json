@@ -1,0 +1,25 @@
+{
+  "name": "lswt2021.chat",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Natanael Arndt <arndtn@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
+    "sass-loader": "^7.3.1",
+    "socket.io-client": "^4.1.2",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
