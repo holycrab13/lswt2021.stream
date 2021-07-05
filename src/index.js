@@ -1,6 +1,6 @@
 import { io } from "socket.io-client";
 
-const socket = io("ws://chat.lswt2021.comiles.eu");
+const socket = io("wss://chat.lswt2021.comiles.eu");
 
 socket.on('server_message', (data) => {
   let e = document.createElement('p');
