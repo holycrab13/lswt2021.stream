@@ -1,6 +1,7 @@
 import { io } from "socket.io-client";
 
-const socket = io("wss://chat.lswt2021.comiles.eu");
+// const socket = io("wss://chat.lswt2021.comiles.eu");
+const socket = io("ws://localhost:8000");
 
 socket.on('server_message', (data) => {
   let e = document.createElement('p');
@@ -9,6 +10,7 @@ socket.on('server_message', (data) => {
   let sp_message = document.createElement('span');
   sp_nick.innerHTML = data.nickname;
   sp_time.innerHTML = data.time;
+  sp_time.setAttribute("class", "date");
   sp_message.innerHTML = data.message;
   e.append(sp_time);
   e.append(" ");
